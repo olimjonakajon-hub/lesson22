@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="font-sans text-slate-900 bg-white">
+  <header class="bg-white py-4 border-b border-black">
+    <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 max-w-6xl">
+      <a href="#" class="flex items-center gap-2">
+        <img src="/img/Group 1 (1).png" alt="YtYt Logo" class="h-8"></a>
+      <nav class="hidden md:flex items-center font-bold gap-8 text-sm  text-black">                    
+        <a href="#learn" class="hover:text-cyan-600 transition">Чему вы научитесь</a>
+        <a href="#process" class="hover:text-cyan-600 transition">Процесс обучения</a>
+        <a href="#pricing" class="hover:text-cyan-600 transition">Стоимость</a>
+        <a href="#contacts" class="hover:text-cyan-600 transition">Контакты</a>
+      </nav>
+      <div class="flex items-center gap-3 sm:gap-4 text-sm">
+        <a href="#registration" class="hidden sm:inline-block text-slate-700 hover:text-slate-900 font-medium">Регистрация</a>
+        <a href="#login" class="flex items-center gap-1.5 rounded-full bg-cyan-500 px-4 sm:px-5 py-2 text-xs sm:text-sm font-medium text-white transition hover:bg-cyan-500">
+        Войти </a>
+        <button class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 ml-1">
+          <span class="w-6 h-0.5 bg-slate-800 rounded-full"></span>
+          <span class="w-6 h-0.5 bg-slate-800 rounded-full"></span>
+          <span class="w-6 h-0.5 bg-slate-800 rounded-full"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="relative overflow-hidden bg-slate-500 from-slate-50 via-white to-sky-50 py-12 md:py-20">
+    <div class="container mx-auto px-4 sm:px-6 max-w-6xl flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+          Школа <span class="text-orange-500 font-bold">{программирования}</span><br />
+          для тех, кому нужны<br />
+          реальные навыки,<br />
+          а не просто сертификат
+        </h1>
+        <p class="mt-4 sm:mt-6 text-xs sm:text-sm text-white max-w-sm">
+          Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+        </p>
+        <button class="mt-6 sm:mt-8 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-orange-600 px-8 py-4 font-semibold text-white transition hover:bg-orange-600 text-sm sm:text-base">
+          Пройти тестирование 
+        </button>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
+        <img src="/img/Code.png" alt="Иллюстрация" class="h-auto max-w-full object-contain" />
+      </div>
+    </div>
+  </section>
+  <section id="learn" class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-8 md:mb-10">
+        Какие технологии вы изучите:
+      </h2>
+      <div class="bg-slate-600 rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img src="/img/g10.png" alt="Разработчик за работой" class="max-w-full h-auto object-contain" />
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col items-center md:items-start gap-3 text-center md:text-left">
+          <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-2.5 items-center">
+            <span class="bg-blue-600 text-white text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Язык программирования Python
+            </span>
+            <span class="bg-amber-600 text-white text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Сети
+            </span>
+          </div>
+          <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-2.5 items-center">
+            <span class="bg-red-600 text-white text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Базы данных
+            </span>
+            <span class="bg-emerald-700 text-white text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Фреймворки Flask и Django
+            </span>
+          </div>
+          <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-2.5 items-center">
+            <span class="bg-sky-600 text-white text-xs sm:text-sm font-medium px-4 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Отладка и тестирование
+            </span>
+            <span class="bg-indigo-600 text-white text-xs sm:text-sm font-medium px-4 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Docker
+            </span>
+            <span class="bg-purple-600 text-white text-xs sm:text-sm font-medium px-4 py-2 sm:py-2.5 rounded-full shadow-sm">
+              Git
+            </span>
+          </div>
+          <p class="mt-4 text-white font-semibold text-xs sm:text-sm leading-relaxed max-w-xs">
+            Это необходимый минимум для современного backend-разработчика
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="process" class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-slate-900 mb-8 md:mb-12">
+        Обучение в YtYt-- это<br />удобно и результативно
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-4 sm:mb-6">
+        <div class="bg-slate-300     rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/svg-gobbler 1.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Огромное<br />количество практики
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Более 500 самостоятельных заданий и 20 полноценных больших проектов
+          </p>
+        </div>
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/Group 1195.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Прямая связь с опытными<br />программистами
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Задавайте вопросы и отправляйте свой код на проверку
+          </p>
+        </div>
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/Group 1182.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Простое и понятное<br />изложение
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Вместо заумных терминов &mdash; примеры из реального мира
+          </p>
+        </div>
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/Group 1176.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Гибкий график<br />занятий
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Учитесь в любое время в удобном для вас темпе
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/svg-gobbler 3.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Современные<br />методики обучения
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Спиральное обучение: погружаемся в материал постепенно, виток за витком
+          </p>
+        </div>
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/svg-gobbler (5) 1.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Оплата небольшими<br />частями
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу
+          </p>
+        </div>
+        <div class="bg-slate-300 rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+          <div class="h-16 w-16 mb-4 sm:mb-6 flex items-center justify-center">
+            <img src="/img/svg-gobbler (6) 1.png" alt="" class="max-h-full max-w-full" />
+          </div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg mb-2 sm:mb-3">
+            Быстрый и легкий<br />возврат
+          </h3>
+          <p class="text-xs text-white leading-relaxed">
+            Если передумаете учиться  вернем деньги за 3 рабочих дня
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-12 md:py-16 bg-slate-50 relative">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="bg-white rounded-3xl shadow-sm p-6 sm:p-8 md:p-12 border border-slate-100">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100 gap-6 md:gap-0">
+          <div class="flex flex-col items-start md:pr-8 pt-2 md:pt-0">
+            <span class="text-4xl sm:text-5xl font-extrabold text-cyan-600 mb-4 sm:mb-6">01</span>
+            <h3 class="font-bold text-black text-base sm:text-lg mb-2 sm:mb-4">
+              Весь материал разбит<br />на небольшие уроки
+            </h3>
+            <p class="text-xs text-black leading-relaxed">
+              Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:px-8 pt-6 md:pt-0">
+            <span class="text-4xl sm:text-5xl font-extrabold text-cyan-600 mb-4 sm:mb-6">02</span>
+            <h3 class="font-bold text-black text-base sm:text-lg mb-2 sm:mb-4">
+              Обучение<br />через практику
+            </h3>
+            <p class="text-xs text-black leading-relaxed">
+              Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.
+            </p>
+          </div>
+          <div class="flex flex-col items-start md:pl-8 pt-6 md:pt-0">
+            <span class="text-4xl sm:text-5xl font-extrabold text-cyan-600 mb-4 sm:mb-6">03</span>
+            <h3 class="font-bold text-black text-base sm:text-lg mb-2 sm:mb-4">
+              Нет ограничений<br />по времени
+            </h3>
+            <p class="text-xs text-black leading-relaxed">
+              Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 flex justify-center">
+        <div class="bg-white rounded-3xl sm:rounded-full p-4 sm:p-2 sm:pr-8 shadow-sm border border-slate-400 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left w-full sm:w-auto">
+          <button class="w-full sm:w-auto rounded-full bg-orange-500 px-8 py-3.5 font-semibold text-white transition hover:bg-orange-600 flex items-center justify-center gap-2 text-sm">
+            Начать обучение 
+          </button>
+          <p class="text-xs text-black font-bold max-w-xs  leading-tight">
+            Попробуйте, первые уроки бесплатны, но нужно пройти тестирование
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-4 bg-slate-400 rounded-3xl p-6 sm:p-8 flex items-center justify-center">
+          <img src="/img/Code.png" alt="Помощь и поддержка" class="max-w-full h-auto object-contain" />
+        </div>
+        <div class="md:col-span-8 bg-slate-300 rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">
+            Помощь и поддержка
+          </h3>
+          <p class="text-1xl font-bold text-black leading-relaxed mb-4">
+            Если в процессе обучения возникнут сложности, вы <br> всегда сможете задать вопрос своему наставнику.
+          </p>
+          <p class="text-2xl text-black font-bold leading-relaxed">
+            Раз в несколько уроков вы будете получать большое задание, которое  <br> нужно будет сдавать на проверку код-ревьюеру. Он внимательно <br> изучит ваш код, найдет ошибки и поможет вам стать лучше.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-8 bg-slate-400 rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col justify-center order-2 md:order-1">
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">
+            Методика обучения
+          </h3>
+          <p class="text-xm font-bold text-black leading-relaxed">
+            Весь учебный материал структурирован по принципу <br> «спирального обучения». Сначала вы получаете базовые знания, <br> а затем на каждом витке спирали углубляетесь в изученные темы, <br> доводя их понимание до совершенства. Такой подход упрощает <br> обучение и гарантирует, что вы не пропустите ничего важного.
+          </p>
+        </div>
+        <div class="md:col-span-4 bg-slate-300 rounded-3xl p-6 sm:p-8 flex items-center justify-center order-1 md:order-2">
+          <img src="/img/Group 1184.png" alt="Методика обучения" class="max-w-full h-auto object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>  
+  <section id="pricing" class="py-12 md:py-16 bg-slate-50">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-8 md:mb-12">
+        Стоимость обучения
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+        <div class="flex items-start gap-4">
+          <img src="/img/svg-gobbler 2.png" alt="" class="w-10 h-10 object-contain " />
+          <p class="text-xs text-black font-bold leading-relaxed">
+            Весь курс разбит на несколько блоков <br> Оплата поэтапная -- вы платите только за тот  блок, который сейчас проходите.
+          </p>
+        </div>
+        <div class="flex items-start gap-4">
+          <img src="/img/svg-gobbler (5) 2.png" alt="" class="w-10 h-10 object-contain  " />
+          <p class="text-xs font-bold text-black leading-relaxed">
+           Любой из блоков вы <br> можете оплатить в <br> рассрочку
+          </p>
+        </div>
+        <div class="flex items-start gap-4">
+          <img src="/img/Group (7).png" alt="" class="w-10 h-10 object-contain " />
+          <p class="text-xs font-bold text-black leading-relaxed">
+            Если передумаете учиться, то возврат <br> можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-3xl p-4 sm:p-8 shadow-sm border border-slate-100 mb-4 overflow-x-auto">
+        <div class="min-w-[500px]">
+          <div class="grid grid-cols-12 text-xs font-semibold text-cyan-700 mb-4 px-4">
+            <div class="col-span-6">Блок</div>
+            <div class="col-span-3">Стоимость </div>
+            <div class="col-span-3 text-right">Расчетное время (мес)</div>
+          </div>
+          <div class="space-y-2 text-xs sm:text-sm text-slate-800">
+            <div class="grid grid-cols-12 items-center bg-slate-400 rounded-xl py-3 px-4">
+              <div class="col-span-6 font-medium">Введение в программирование</div>
+              <div class="col-span-3">Бесплатно</div>
+              <div class="col-span-3 text-right">0.5</div>
+            </div>
+            <div class="grid grid-cols-12 items-center py-3 px-4">
+              <div class="col-span-6 font-medium">Основы программирования на Python</div>
+              <div class="col-span-3">9 900</div>
+              <div class="col-span-3 text-right">1</div>
+            </div>
+            <div class="grid grid-cols-12 items-center bg-slate-400 rounded-xl py-3 px-4">
+              <div class="col-span-6 font-medium">Python, продвинутый уровень</div>
+              <div class="col-span-3">14 900</div>
+              <div class="col-span-3 text-right">2.5</div>
+            </div>
+            <div class="grid grid-cols-12 items-center py-3 px-4">
+              <div class="col-span-6 font-medium">Сети + фреймворк Flask</div>
+              <div class="col-span-3">14 900</div>
+              <div class="col-span-3 text-right">2.5</div>
+            </div>
+            <div class="grid grid-cols-12 items-center bg-slate-400 rounded-xl py-3 px-4">
+              <div class="col-span-6 font-medium">Базы данных</div>
+              <div class="col-span-3">14 900</div>
+              <div class="col-span-3 text-right">2</div>
+            </div>
+            <div class="grid grid-cols-12 items-center py-3 px-4">
+              <div class="col-span-6 font-medium">Фреймворк Django</div>
+              <div class="col-span-3">14 900</div>
+              <div class="col-span-3 text-right">2</div>
+            </div>
+            <div class="grid grid-cols-12 items-center bg-slate-500 rounded-xl py-3 px-4">
+              <div class="col-span-6 font-medium">Разработка боевого raquo проекта</div>
+              <div class="col-span-3">9 900</div>
+              <div class="col-span-3 text-right">1.5</div>
+            </div>
+            <div class="grid grid-cols-12 items-center py-4 px-4 font-bold text-sm sm:text-base text-slate-900 border-t border-white">
+              <div class="col-span-6">Итого</div>
+              <div class="col-span-3">79 400</div>
+              <div class="col-span-3 text-right">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-100/70 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+          <img src="/img/svg-gobbler (1) 2.png" alt="" class="w-12 h-12 sm:w-16 sm:h-16 object-contain " />
+          <p class="text-2xl text-black font-bold leading-relaxed max-w-xl">
+            Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.
+          </p>
+        </div>
+        <button class="w-full md:w-auto rounded-full bg-orange-700 px-8 py-3.5 font-semibold text-white transition hover:bg-orange-700 flex items-center justify-center gap-2 text-sm ">
+          Начать обучение 
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer id="contacts" class="bg-white pt-10 sm:pt-12 pb-8 border-t border-slate-100">
+    <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 mb-8 sm:mb-12">
+        <div class="md:col-span-4 flex flex-col justify-between items-center sm:items-start text-center sm:text-left">
+          <div>
+            <div class="flex items-center gap-3 mb-4 justify-center sm:justify-start">
+              <span class="text-2xl font-extrabold">
+                <span class="text-sky-400">Yt</span><span class="text-orange-500">Yt</span>
+              </span>
+              <span class="text-xs text-black font-bold leading-tight">Школа<br />программирования</span>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-4 space-y-2 text-xs font-bold text-black text-center sm:text-left">
+          <p><a href="#learn" class="hover:text-slate-900 transition">Чему вы научитесь</a></p>
+          <p><a href="#process" class="hover:text-slate-900 transition">Процесс обучения</a></p>
+          <p><a href="#pricing" class="hover:text-slate-900 transition">Стоимость</a></p>
+          <p><a href="#contacts" class="hover:text-slate-900 transition">Контакты</a></p>
+          <p><a href="#registration" class="hover:text-slate-900 transition">Регистрация</a></p>
+        </div>
+        <div class="md:col-span-4 flex flex-col justify-between text-xs text-slate-500 space-y-4 md:space-y-0 text-center sm:text-left">
+          <div>
+            <p class="text-sky-600 font-semibold mb-1 text-sm sm:text-base">+7 (499) 348 93 96</p>   
+          </div>
+          <div class="text-[11px] leading-relaxed text-black font-bold">
+            ИП Умаров Т. А.<br />
+            ИНН 745216229809<br />
+            ОГРНИП 315745200001358
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
